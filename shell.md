@@ -10,3 +10,5 @@ $ cd $(cat ~/remember.pwd)
 $ cd -P .. 
 Here, -P stands for physical directory
 
+## List directory information
+ls -l -d <dirname>
