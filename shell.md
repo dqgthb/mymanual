@@ -6,3 +6,7 @@ $ cd `cat ~/remember.pwd`
 or
 $ cd $(cat ~/remember.pwd)
 
+## Go to parent directory of a symlink
+$ cd -P .. 
+Here, -P stands for physical directory
+
