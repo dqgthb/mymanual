@@ -12,3 +12,8 @@ Here, -P stands for physical directory
 
 ## List directory information
 ls -l -d <dirname>
+
+## For Grep, go to
+./grep.md
+
+
