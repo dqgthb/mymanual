@@ -18,4 +18,7 @@ or
 ### Multiple grep: AND operation
     $ grep "string1" <filename> | grep "string2"
 
+## Not Grep
+    $ grep -v "string" <filename>
+
 
