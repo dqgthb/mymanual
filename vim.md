@@ -17,3 +17,14 @@ Pressing only <c-g> shows the path relative to Vim's current pwd.
 ## How to tabularize after the matched pattern (not including the pattern)?
 	:Tabularize /,\zs (for comma separated)
 
+## How to insert a timestamp or date?
+	in normal mode type -> !!date
+	in command mode type -> r!date
+
+## Move to last latest buffer?
+	<c-^>
+
+## List all buffers?
+	:buffers / :ls / :files
+
+
