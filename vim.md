@@ -27,4 +27,11 @@ Pressing only <c-g> shows the path relative to Vim's current pwd.
 ## List all buffers?
 	:buffers / :ls / :files
 
+## How to insert a line? Repeat n times of #,-,*?
+In normal mode,
+    80a#<ESC>
+As soon as the ESC is pressed, # will be appended 80 times to the line where the cursor is located.
+It is interesting that, if <c-c> is pressed instead of <ESC>, the command does not work. 
 
+## If indentation, comment, commenting does not work well (related to filetype, formatoptions, comments) 
+It is probably due to cindent. Disable it.
