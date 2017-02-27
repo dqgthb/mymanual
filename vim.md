@@ -35,3 +35,11 @@ It is interesting that, if <c-c> is pressed instead of <ESC>, the command does n
 
 ## If indentation, comment, commenting does not work well (related to filetype, formatoptions, comments) 
 It is probably due to cindent. Disable it.
+
+## My vim is too slow. How do I check which plugin is making this lag?
+    :profile start profile.log
+    :profile func *
+    :profile file *
+    " At this point do slow actions
+    :profile pause
+    :noautocmd qall!
