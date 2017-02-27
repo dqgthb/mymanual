@@ -44,7 +44,7 @@ It is probably due to cindent. Disable it.
     :profile pause
     :noautocmd qall!
 
-## temporarily quit vim and go to terminal
+## temporarily quit vim and go to terminal (suspend)
     <c-z>
     # if you want to come back
     $ fg
