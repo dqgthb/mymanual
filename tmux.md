@@ -57,6 +57,10 @@
 #### break pane (make a new one?)  
     prefix !
 
+#### join pane (opposite of break pane)
+    :join-pane -s :1 (achieve window 1 to the current window)
+    :join-pane -t :1 (send the current window to window 1)
+
 #### rotate window (pane) 
     prefix C-o
 
