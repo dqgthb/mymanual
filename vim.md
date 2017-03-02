@@ -48,3 +48,7 @@ It is probably due to cindent. Disable it.
     <c-z>
     # if you want to come back
     $ fg
+
+## How to remember yanked text only, not (d/D/x/X/c/C/s/S)?
+0 register would hold the yanked text only.
+
