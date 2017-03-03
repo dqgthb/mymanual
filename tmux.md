@@ -74,3 +74,8 @@
     prefix space
 
 ## How to reposition, move, swap window
+    swap-window -t 0
+If not working,
+    move-window -t 0
+    swap-window -s 3 -t 1
+    bind-key T swap-window -t 0
