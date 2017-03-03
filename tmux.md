@@ -1,74 +1,76 @@
-#### About Session
+# Tmux 
 
-#### create new session
+## About Session
+
+## create new session
     $ tmux new -s <sesion-name>
 
-#### edit session name
+## edit session name
     ctrl + b, $
 
-#### session termination
+## session termination
     exit
 
-#### kill session
+## kill session
     tmux kill-session [-a] [-t session_name]
 
-#### session halt (detached)
+## session halt (detached)
     ctrl + b, d
 
-#### list session
+## list session
     $ tmux ls
 
-#### restart session (attach)
+## restart session (attach)
     $ tmux attach -t <session-number or session-name>
 
-#### next session
+## next session
     prefix )
 
-#### previous session
+## previous session
     prefix (
 
-#### About Window
-#### create new window
+## About Window
+## create new window
     <ctrl>+b, c
 
-#### next window 
+## next window 
     prefix n
 
-#### previous window
+## previous window
     prefix p
 
-#### last window
+## last window
     prefix l
 
-#### choose window
+## choose window
     prefix w
 
     1# About Pane
 
-#### last pane
+## last pane
     prefix ;
 
-#### horizontal split
+## horizontal split
     prefix %
 
 
-#### vertical split 
+## vertical split 
     prefit "
 
-#### break pane (make a new one?)  
+## break pane (make a new one?)  
     prefix !
 
-#### join pane (opposite of break pane)
+## join pane (opposite of break pane)
     :join-pane -s :1 (achieve window 1 to the current window)
     :join-pane -t :1 (send the current window to window 1)
 
-#### rotate window (pane) 
+## rotate window (pane) 
     prefix C-o
 
-#### select next pane 
+## select next pane 
     prefix o 
 
-#### automated layout
+## automated layout
     prefix space
 
-
+## How to reposition, move, swap window
