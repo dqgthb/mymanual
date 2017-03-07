@@ -13,3 +13,7 @@
 * If merge needed, checkout to the directory you would like to retain, then use `git merge`.
     `$ git checkout master`
     `$ git merge develop`
+
+## how to delete a branch?
+After ensuring that the data is all pushed,
+`$ git branch -d develop`
