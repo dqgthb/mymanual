@@ -61,3 +61,6 @@ It is probably due to cindent. Disable it.
 ## How to remember yanked text only, not (d/D/x/X/c/C/s/S)?
 0 register would hold the yanked text only.
 
+## How to check which file sets what? (e.g. set tw?)
+`:verbose set textwidth`
+
