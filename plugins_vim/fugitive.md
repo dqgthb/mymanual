@@ -1,6 +1,13 @@
 # Fugitive
 
-## Typical workflow
+## New workflow
+```VIM
+<leader>gap  : stands for :Git add -p %<cr>
+s or e : seperate or edit patch
+<leader>gco : stands for :Gcommit --verbose<cr>
+```
+
+## Typical workflow (now depricated)
 
     :gst<tab><cr> # this would open the git status window
     <c-n> # to move the cursor to the next listed file (<c-p> to move to thet previous one)
