@@ -16,4 +16,5 @@ ls -l -d <dirname>
 ## For Grep, go to
 ./grep.md
 
-
+## If zsh ir loaded twice,
+check if .zprofile and .zshrc both exist in your home directoy.
