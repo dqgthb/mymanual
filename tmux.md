@@ -79,3 +79,6 @@ If not working,
     move-window -t 0
     swap-window -s 3 -t 1
     bind-key T swap-window -t 0
+## How to: close all windows and panes? (quit session?)
+You can detach the session with prefix+d, or, if you want to completely terminate the session, you might use prefix:kill-session<cr> or type
+$tmux kill-session
