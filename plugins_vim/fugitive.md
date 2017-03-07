@@ -20,6 +20,15 @@ s or e : seperate or edit patch
     1 followed by <c-g> to see the full path of the current file
     ]c (or ]h) for searcing hunks # [c for opposite direction
 
+## If Error (with Neovim but not vim)
+Don't forget to change git core editor to nvim instead of vim
+```
+git config --global core.editor "nvim"
+```
+
+## How to exit gitdiff (vimdiff) in fugitive?
+Some say `<c-w><c-o>`, others say <c-w>h<c-w>c
+Not sure yet.
 
 ## How to type general git commands? e.g. git add -p?
 Just use `:Git`
