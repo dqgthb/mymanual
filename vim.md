@@ -7,6 +7,7 @@ brew install vim --with-cscope --with-lua
 brew install macvim --with-cscope --with-lua
 brew linkapps macvim
 ```
+It seems like `brew linkapps macvim` does not work properly for Mac Spotlight. I should manually option+command+drag (alias) the "/usr/local/Cellar/macvim/8.0-127/MacVim.app" to "/Applications/" directory and it works for spotlight.
 
 ## Select mode?
 visual mode then <c-g>. If you type anything in that state all selected letters would be deleted as if you selected on a normal editor. 
