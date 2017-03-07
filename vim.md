@@ -64,3 +64,7 @@ It is probably due to cindent. Disable it.
 ## How to check which file sets what? (e.g. set tw?)
 `:verbose set textwidth`
 
+## When using substitute(), if it does not work as expected
+Replace " (double quote) into ' (single quote).
+For example, for markdown checkbox function,
+`"\(^\s*-\s\)"` does not work while `'\(^\s*-\s\)'` works.
