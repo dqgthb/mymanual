@@ -68,3 +68,6 @@ It is probably due to cindent. Disable it.
 Replace " (double quote) into ' (single quote).
 For example, for markdown checkbox function,
 `"\(^\s*-\s\)"` does not work while `'\(^\s*-\s\)'` works.
+
+## Replace / substitute from line 10 to line 15
+`:10,15s/patt1/sub/gc`
