@@ -1,5 +1,13 @@
 # Vim manual
 
+## Install with brew?
+In order to use neocomplete,
+```
+brew install vim --with-cscope --with-lua
+brew install macvim --with-cscope --with-lua
+brew linkapps macvim
+```
+
 ## Select mode?
 visual mode then <c-g>. If you type anything in that state all selected letters would be deleted as if you selected on a normal editor. 
 
