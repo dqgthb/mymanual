@@ -21,3 +21,8 @@ s or e : seperate or edit patch
     ]c (or ]h) for searcing hunks # [c for opposite direction
 
 
+## How to type general git commands? e.g. git add -p?
+Just use `:Git`
+```
+:Git add -p %<cr>
+```
