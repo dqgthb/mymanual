@@ -38,7 +38,12 @@ In order to disable ff by default,
 ```
 git config branch.master.mergeoptions "--no-ff"
 ```
-
+The above command adds the following to your $(REPO)/.git/config
+```
+[branch "master"]
+    mergeoptions = --no-ff
+```
+[Thanks to SO.](http://stackoverflow.com/questions/2500296/can-i-make-fast-forwarding-be-off-by-default-in-git)
 
 
 
