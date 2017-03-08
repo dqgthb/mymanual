@@ -45,6 +45,7 @@ The above command adds the following to your $(REPO)/.git/config
 ```
 [Thanks to SO.](http://stackoverflow.com/questions/2500296/can-i-make-fast-forwarding-be-off-by-default-in-git)
 
+[This might be dangerous, though.](https://sandofsky.com/blog/git-workflow.html)
 
 
 
