@@ -71,3 +71,7 @@ For example, for markdown checkbox function,
 
 ## Replace / substitute from line 10 to line 15
 `:10,15s/patt1/sub/gc`
+
+## How to indent / unindent a line in insert mode? indentation?
+`<c-t>` indents a line while `<c-d>` unindents a line.
+This is useful for markdown listing.
