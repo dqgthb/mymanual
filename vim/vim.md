@@ -83,6 +83,15 @@ This is useful for markdown listing.
 ## How to maximize current buffer?
 `:only`
 
+## How to switch to a specific buffer?
+```
+:buffer <name> or <number>
+:b
+:bu 
+:buf
+:e #1 <- buffer number
+```
+
 ## How to see all existing buffers including hidden buffers?
 ```
 :ls!
