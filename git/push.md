@@ -11,6 +11,5 @@ For tags,
 All in one,
 `git push --mirror`
 
-But careful, since `--mirror` will also push my remotes <= ?
-
+But careful, since `--mirror` will also push my remotes (?)
 Use `--dry-run` to inspect what will happen.
