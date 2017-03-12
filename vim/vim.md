@@ -75,3 +75,17 @@ For example, for markdown checkbox function,
 ## How to indent / unindent a line in insert mode? indentation?
 `<c-t>` indents a line while `<c-d>` unindents a line.
 This is useful for markdown listing.
+
+## How to view help files in full screen?
+`:only`
+`:h <helpfile> | only`
+
+## How to maximize current buffer?
+`:only`
+
+## How to see all existing buffers including hidden buffers?
+```
+:ls!
+:files!
+:buffers!
+```
