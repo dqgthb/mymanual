@@ -13,6 +13,12 @@ git clone git@github.com:whatever folder-name
 ## If git does not detect rename of files or directory (mv initvimfiles nvimfiles)
 Revert back the names and use `git mv`
 
-
+## How to automatically push after commit
+Create `.git/hooks/post-commit`
+with contents of
+```
+#!/bin/sh
+git push origin master
+```
 
  
