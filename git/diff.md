@@ -22,4 +22,5 @@ then `git diff HEAD` is equal to `git diff master`, meaning that HEAD and the na
 Intuitively, `git diff origin/master HEAD` would give the correct answer.
 If you want to specify a branch, `git diff origin/master master`.
 
-
+## How to show filenames only?
+add --stat option
