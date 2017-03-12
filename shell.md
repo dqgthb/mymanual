@@ -18,3 +18,6 @@ ls -l -d <dirname>
 
 ## If zsh ir loaded twice,
 check if .zprofile and .zshrc both exist in your home directoy.
+
+## Create parent directories if not existent. 
+`mkdir -p ~/foo/bar/target`
