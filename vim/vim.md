@@ -98,3 +98,26 @@ This is useful for markdown listing.
 :files!
 :buffers!
 ```
+
+## How to execute one normal mode command in insert mode.
+ctrl o will allow you to execute one normal mode command in insert mode.
+
+## How to navigate cursor in insert mode.
+ctrl o will allow you to execute one normal mode command in insert mode.
+Just press ctrl and 'o' at the same time and press normal mode command.
+
+## How to repeat find 'x' (fx) command?
+; repeats f, , reverses f
+
+## What is magic, very magic, nomagic in substitution regex ? (\v, \m, \M, \V)
+:h magic
+It is basically a set of different ways to interpret a symbol.
+
+## How to add letters at the end of multiple lines?
+visual select lines and 
+`:s/$/foo/gc`
+or macro
+
+## How to use command line window? Edit  command line history? Reuse? q:?
+q: and it will lead to command line history window.
+You navigate as if normal mode, edit, and enter insert mode and edit, and press enter to repeat the command.
