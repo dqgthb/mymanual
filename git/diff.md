@@ -24,3 +24,10 @@ If you want to specify a branch, `git diff origin/master master`.
 
 ## How to show filenames only?
 add --stat option
+
+## How to view last commit?
+```
+git diff HEAD^ HEAD
+# this can be interpreted as 'the amount of work required for HEAD^ to become HEAD', that is, the incremental difference.
+```
+
