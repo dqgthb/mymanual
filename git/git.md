@@ -21,4 +21,8 @@ with contents of
 git push origin master
 ```
 
- 
+## Edit git config --global global
+```
+git config --global --edit
+git config --global --unser core.excludesfile
+```
