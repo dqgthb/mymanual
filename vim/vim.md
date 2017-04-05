@@ -54,9 +54,11 @@ It is probably due to cindent. Disable it.
     :noautocmd qall!
 
 ## temporarily quit vim and go to terminal (suspend)
+```
     <c-z>
     # if you want to come back
     $ fg
+```
 
 ## How to remember yanked text only, not (d/D/x/X/c/C/s/S)?
 0 register would hold the yanked text only.
@@ -121,3 +123,17 @@ or macro
 ## How to use command line window? Edit  command line history? Reuse? q:?
 q: and it will lead to command line history window.
 You navigate as if normal mode, edit, and enter insert mode and edit, and press enter to repeat the command.
+
+## When joining lines with J key, vim adds space in between. How to prevent this?
+`set nojoinspaces` this not works
+`gJ` This works
+
+## subsitute, replace faster?
+```
+/{ searchword } <cr>
+cgn
+{ replaceword }
+. {dot}
+. ...
+```
+
