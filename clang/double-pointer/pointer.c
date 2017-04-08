@@ -29,7 +29,7 @@ int main(){
     printf("num is %d\n",num);
     printf("num's address is %p\n",&num);
     /*int *p=NULL; //segfault*/
-    int *p;
+    int *p=NULL;
     printf("p is %p\n",p);
     printf("p is pointing at %d\n",*p); //segfault, probably b/c of trying to read unauthorized sector
     printf("p's address is %p\n",&p);

@@ -1,0 +1,2 @@
+cgdb
+ollydebugger

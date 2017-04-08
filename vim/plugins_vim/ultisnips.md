@@ -15,3 +15,8 @@ ln -s ~/runtime_config/mySnips/ ~/.vim/mySnips/
 ## Trigger snippet
 `:Snippets (using fzf)`
 
+## If error
+`pip3 uninstall neovim`
+`pip3 install neovim`
+
+
