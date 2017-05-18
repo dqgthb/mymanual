@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+<ul>
+<li><a href="#vim-manual">Vim manual</a>
+<ul>
+<li><a href="#install-with-brew">Install with brew?</a></li>
+<li><a href="#select-mode">Select mode?</a></li>
+<li><a href="#how-to-map-ctrl-tab">How to map ctrl tab?</a></li>
+<li><a href="#how-to-check-the-full-path-of-the-current-file">How to check the full path of the current file?</a></li>
+<li><a href="#how-to-undo-arrange-align-tabularize-in-csv">How to undo arrange / align / tabularize in csv?</a></li>
+<li><a href="#how-to-tabularize-after-the-matched-pattern-not-including-the-pattern">How to tabularize after the matched pattern (not including the pattern)?</a></li>
+<li><a href="#how-to-insert-a-timestamp-or-date">How to insert a timestamp or date?</a></li>
+<li><a href="#move-to-last-latest-buffer">Move to last latest buffer?</a></li>
+<li><a href="#list-all-buffers">List all buffers?</a></li>
+<li><a href="#how-to-insert-a-line-repeat-n-times-of--">How to insert a line? Repeat n times of <code>#,-,*</code>?</a></li>
+<li><a href="#if-indentation-comment-commenting-does-not-work-well-related-to-filetype-formatoptions-comments">If indentation, comment, commenting does not work well (related to filetype, formatoptions, comments)</a></li>
+<li><a href="#my-vim-is-too-slow.-how-do-i-check-which-plugin-is-making-this-lag">My vim is too slow. How do I check which plugin is making this lag?</a></li>
+<li><a href="#temporarily-quit-vim-and-go-to-terminal-suspend">temporarily quit vim and go to terminal (suspend)</a></li>
+<li><a href="#how-to-remember-yanked-text-only-not-ddxxccss">How to remember yanked text only, not (d/D/x/X/c/C/s/S)?</a></li>
+<li><a href="#how-to-check-which-file-sets-what-e.g.-set-tw">How to check which file sets what? (e.g. set tw?)</a></li>
+<li><a href="#when-using-substitute-if-it-does-not-work-as-expected">When using substitute(), if it does not work as expected</a></li>
+<li><a href="#replace-substitute-from-line-10-to-line-15">Replace / substitute from line 10 to line 15</a></li>
+<li><a href="#how-to-indent-unindent-a-line-in-insert-mode-indentation">How to indent / unindent a line in insert mode? indentation?</a></li>
+<li><a href="#how-to-view-help-files-in-full-screen">How to view help files in full screen?</a></li>
+<li><a href="#how-to-maximize-current-buffer">How to maximize current buffer?</a></li>
+<li><a href="#how-to-switch-to-a-specific-buffer">How to switch to a specific buffer?</a></li>
+<li><a href="#how-to-see-all-existing-buffers-including-hidden-buffers">How to see all existing buffers including hidden buffers?</a></li>
+<li><a href="#how-to-execute-one-normal-mode-command-in-insert-mode.">How to execute one normal mode command in insert mode.</a></li>
+<li><a href="#how-to-navigate-cursor-in-insert-mode.">How to navigate cursor in insert mode.</a></li>
+<li><a href="#how-to-repeat-find-x-fx-command">How to repeat find 'x' (fx) command?</a></li>
+<li><a href="#what-is-magic-very-magic-nomagic-in-substitution-regex">What is magic, very magic, nomagic in substitution regex ? ( , , )</a></li>
+<li><a href="#how-to-add-letters-at-the-end-of-multiple-lines">How to add letters at the end of multiple lines?</a></li>
+<li><a href="#how-to-use-command-line-window-edit-command-line-history-reuse-q">How to use command line window? Edit command line history? Reuse? q:?</a></li>
+<li><a href="#when-joining-lines-with-j-key-vim-adds-space-in-between.-how-to-prevent-this">When joining lines with J key, vim adds space in between. How to prevent this?</a></li>
+<li><a href="#subsitute-replace-faster">subsitute, replace faster?</a></li>
+<li><a href="#how-to-stop-highlighting-search-result">How to stop highlighting search result?</a></li>
+</ul></li>
+</ul>
+<h1 id="vim-manual">Vim manual</h1>
+<h2 id="install-with-brew">Install with brew?</h2>
+<p>In order to use neocomplete,</p>
+<pre><code>brew install vim --with-cscope --with-lua
+brew install macvim --with-cscope --with-lua
+brew linkapps macvim</code></pre>
+<p>It seems like <code>brew linkapps macvim</code> does not work properly for Mac Spotlight. I should manually option+command+drag (alias) the &quot;/usr/local/Cellar/macvim/8.0-127/MacVim.app&quot; to &quot;/Applications/&quot; directory and it works for spotlight.</p>
+<h2 id="select-mode">Select mode?</h2>
+<p>visual mode then <c-g>. If you type anything in that state all selected letters would be deleted as if you selected on a normal editor.</p>
+<h2 id="how-to-map-ctrl-tab">How to map ctrl tab?</h2>
+<p>It works for gvim, but not for terminal. <c-tab> can be used.</p>
+<h2 id="how-to-check-the-full-path-of-the-current-file">How to check the full path of the current file?</h2>
+<p>Press 1 followed by <c-g> to see the full path of the current file. Pressing only <c-g> shows the path relative to Vim's current pwd.</p>
+<h2 id="how-to-undo-arrange-align-tabularize-in-csv">How to undo arrange / align / tabularize in csv?</h2>
+<pre><code>:unArrangeColumn (plugin csv.vim)
+:CSVUnArrangeColumn (plugin csv.vim)</code></pre>
+<h2 id="how-to-tabularize-after-the-matched-pattern-not-including-the-pattern">How to tabularize after the matched pattern (not including the pattern)?</h2>
+<pre><code>:Tabularize /,\zs (for comma separated)</code></pre>
+<h2 id="how-to-insert-a-timestamp-or-date">How to insert a timestamp or date?</h2>
+<pre><code>in normal mode type -&gt; !!date
+in command mode type -&gt; r!date</code></pre>
+<h2 id="move-to-last-latest-buffer">Move to last latest buffer?</h2>
+<pre><code>&lt;c-^&gt;</code></pre>
+<h2 id="list-all-buffers">List all buffers?</h2>
+<pre><code>:buffers / :ls / :files</code></pre>
+<h2 id="how-to-insert-a-line-repeat-n-times-of--">How to insert a line? Repeat n times of <code>#,-,*</code>?</h2>
+<p>In normal mode, <code>80a#&lt;ESC&gt;</code> As soon as the ESC is pressed, # will be appended 80 times to the line where the cursor is located. It is interesting that, if <code>&lt;c-c&gt;</code> is pressed instead of <code>&lt;ESC&gt;</code>, the command does not work.</p>
+<h2 id="if-indentation-comment-commenting-does-not-work-well-related-to-filetype-formatoptions-comments">If indentation, comment, commenting does not work well (related to filetype, formatoptions, comments)</h2>
+<p>It is probably due to cindent. Disable it.</p>
+<h2 id="my-vim-is-too-slow.-how-do-i-check-which-plugin-is-making-this-lag">My vim is too slow. How do I check which plugin is making this lag?</h2>
+<pre><code>:profile start profile.log
+:profile func *
+:profile file *
+&quot; At this point do slow actions
+:profile pause
+:noautocmd qall!</code></pre>
+<h2 id="temporarily-quit-vim-and-go-to-terminal-suspend">temporarily quit vim and go to terminal (suspend)</h2>
+<pre><code>    &lt;c-z&gt;
+    # if you want to come back
+    $ fg</code></pre>
+<h2 id="how-to-remember-yanked-text-only-not-ddxxccss">How to remember yanked text only, not (d/D/x/X/c/C/s/S)?</h2>
+<p>0 register would hold the yanked text only.</p>
+<h2 id="how-to-check-which-file-sets-what-e.g.-set-tw">How to check which file sets what? (e.g. set tw?)</h2>
+<p><code>:verbose set textwidth</code></p>
+<h2 id="when-using-substitute-if-it-does-not-work-as-expected">When using substitute(), if it does not work as expected</h2>
+<p>Replace &quot; (double quote) into ' (single quote). For example, for markdown checkbox function, <code>&quot;\(^\s*-\s\)&quot;</code> does not work while <code>'\(^\s*-\s\)'</code> works.</p>
+<h2 id="replace-substitute-from-line-10-to-line-15">Replace / substitute from line 10 to line 15</h2>
+<p><code>:10,15s/patt1/sub/gc</code></p>
+<h2 id="how-to-indent-unindent-a-line-in-insert-mode-indentation">How to indent / unindent a line in insert mode? indentation?</h2>
+<p><code>&lt;c-t&gt;</code> indents a line while <code>&lt;c-d&gt;</code> unindents a line. This is useful for markdown listing.</p>
+<h2 id="how-to-view-help-files-in-full-screen">How to view help files in full screen?</h2>
+<p><code>:only</code> <code>:h &lt;helpfile&gt; | only</code></p>
+<h2 id="how-to-maximize-current-buffer">How to maximize current buffer?</h2>
+<p><code>:only</code></p>
+<h2 id="how-to-switch-to-a-specific-buffer">How to switch to a specific buffer?</h2>
+<pre><code>:buffer &lt;name&gt; or &lt;number&gt;
+:b
+:bu 
+:buf
+:e #1 &lt;- buffer number</code></pre>
+<h2 id="how-to-see-all-existing-buffers-including-hidden-buffers">How to see all existing buffers including hidden buffers?</h2>
+<pre><code>:ls!
+:files!
+:buffers!</code></pre>
+<h2 id="how-to-execute-one-normal-mode-command-in-insert-mode.">How to execute one normal mode command in insert mode.</h2>
+<p>ctrl o will allow you to execute one normal mode command in insert mode.</p>
+<h2 id="how-to-navigate-cursor-in-insert-mode.">How to navigate cursor in insert mode.</h2>
+<p>ctrl o will allow you to execute one normal mode command in insert mode. Just press ctrl and 'o' at the same time and press normal mode command.</p>
+<h2 id="how-to-repeat-find-x-fx-command">How to repeat find 'x' (fx) command?</h2>
+<p>; repeats f, , reverses f</p>
+<h2 id="what-is-magic-very-magic-nomagic-in-substitution-regex">What is magic, very magic, nomagic in substitution regex ? ( , , )</h2>
+<p>:h magic It is basically a set of different ways to interpret a symbol.</p>
+<h2 id="how-to-add-letters-at-the-end-of-multiple-lines">How to add letters at the end of multiple lines?</h2>
+<p>visual select lines and <code>:s/$/foo/gc</code> or macro</p>
+<h2 id="how-to-use-command-line-window-edit-command-line-history-reuse-q">How to use command line window? Edit command line history? Reuse? q:?</h2>
+<p>q: and it will lead to command line history window. You navigate as if normal mode, edit, and enter insert mode and edit, and press enter to repeat the command.</p>
+<h2 id="when-joining-lines-with-j-key-vim-adds-space-in-between.-how-to-prevent-this">When joining lines with J key, vim adds space in between. How to prevent this?</h2>
+<p><code>set nojoinspaces</code> this not works <code>gJ</code> This works</p>
+<h2 id="subsitute-replace-faster">subsitute, replace faster?</h2>
+<pre><code>/{ searchword } &lt;cr&gt;
+cgn
+{ replaceword }
+. {dot}
+. ...</code></pre>
+<h2 id="how-to-stop-highlighting-search-result">How to stop highlighting search result?</h2>
+<p><code>:noh</code></p>
+</body>
+</html>

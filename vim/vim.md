@@ -1,6 +1,8 @@
 # Vim manual
+This is interesting
 
 ## Install with brew?
+
 In order to use neocomplete,
 ```
 brew install vim --with-cscope --with-lua
@@ -8,8 +10,8 @@ brew install macvim --with-cscope --with-lua
 brew linkapps macvim
 ```
 It seems like `brew linkapps macvim` does not work properly for Mac Spotlight. I should manually option+command+drag (alias) the "/usr/local/Cellar/macvim/8.0-127/MacVim.app" to "/Applications/" directory and it works for spotlight.
-
 ## Select mode?
+
 visual mode then <c-g>. If you type anything in that state all selected letters would be deleted as if you selected on a normal editor. 
 
 ## How to map ctrl tab?
@@ -36,11 +38,11 @@ Pressing only <c-g> shows the path relative to Vim's current pwd.
 ## List all buffers?
 	:buffers / :ls / :files
 
-## How to insert a line? Repeat n times of #,-,*?
+## How to insert a line? Repeat n times of `#,-,*`?
 In normal mode,
-    80a#<ESC>
+`80a#<ESC>`
 As soon as the ESC is pressed, # will be appended 80 times to the line where the cursor is located.
-It is interesting that, if <c-c> is pressed instead of <ESC>, the command does not work. 
+It is interesting that, if `<c-c>` is pressed instead of `<ESC>`, the command does not work.
 
 ## If indentation, comment, commenting does not work well (related to filetype, formatoptions, comments) 
 It is probably due to cindent. Disable it.
@@ -59,6 +61,7 @@ It is probably due to cindent. Disable it.
     # if you want to come back
     $ fg
 ```
+end
 
 ## How to remember yanked text only, not (d/D/x/X/c/C/s/S)?
 0 register would hold the yanked text only.
@@ -84,6 +87,7 @@ This is useful for markdown listing.
 
 ## How to maximize current buffer?
 `:only`
+hello
 
 ## How to switch to a specific buffer?
 ```
@@ -93,6 +97,7 @@ This is useful for markdown listing.
 :buf
 :e #1 <- buffer number
 ```
+This.
 
 ## How to see all existing buffers including hidden buffers?
 ```
@@ -100,6 +105,7 @@ This is useful for markdown listing.
 :files!
 :buffers!
 ```
+end
 
 ## How to execute one normal mode command in insert mode.
 ctrl o will allow you to execute one normal mode command in insert mode.
@@ -111,7 +117,7 @@ Just press ctrl and 'o' at the same time and press normal mode command.
 ## How to repeat find 'x' (fx) command?
 ; repeats f, , reverses f
 
-## What is magic, very magic, nomagic in substitution regex ? (\v, \m, \M, \V)
+## What is magic, very magic, nomagic in substitution regex ? `(\v, \m, \M, \V)`
 :h magic
 It is basically a set of different ways to interpret a symbol.
 
@@ -123,11 +129,9 @@ or macro
 ## How to use command line window? Edit  command line history? Reuse? q:?
 q: and it will lead to command line history window.
 You navigate as if normal mode, edit, and enter insert mode and edit, and press enter to repeat the command.
-
 ## When joining lines with J key, vim adds space in between. How to prevent this?
 `set nojoinspaces` this not works
 `gJ` This works
-
 ## subsitute, replace faster?
 ```
 /{ searchword } <cr>
@@ -136,4 +140,8 @@ cgn
 . {dot}
 . ...
 ```
+end
 
+## How to stop highlighting search result?
+`:noh`
+end.

@@ -45,6 +45,8 @@ END
 ```
 m-x kill-matching-buffers
 m-x ibuffer <- preferred
+m-x kill-some-buffers
+m-x kill-matching-buffers
 ```
 END
 
@@ -54,3 +56,15 @@ q
 c-x 0
 ```
 END
+
+## How to kill all other buffers?
+```
+(global-set-key (kbd "C-x C-b") 'ibuffer)
+m mark
+t toggle
+D kill all marked buffers
+
+or
+d, d, d ... to mark for deletion
+x to delete the buffers marked for deletion
+```

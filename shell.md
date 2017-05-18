@@ -30,6 +30,9 @@ e.g.
 type -a gcc
 type -a ctags
 ```
-
-
+## check the exit status
+```
+$ echo $?
+```
+END
 
