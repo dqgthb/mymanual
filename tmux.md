@@ -88,3 +88,6 @@ tmux-ressurect
 ## How to: close all windows and panes? (quit session?)
 You can detach the session with prefix+d, or, if you want to completely terminate the session, you might use prefix:kill-session<cr> or type
 $tmux kill-session
+
+## How to resize with arrow keys?
+<prefix> followed by <c + arrow key>

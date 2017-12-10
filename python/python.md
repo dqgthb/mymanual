@@ -58,5 +58,5 @@ exec(open("./path/to/script.py").read(), globals())
 
 ## To see python documentation from command line, type
 ```
-pydoc <module> 
+pydoc <module>
 ```

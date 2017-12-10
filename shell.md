@@ -36,3 +36,7 @@ $ echo $?
 ```
 END
 
+## run as background process
+```
+$ command &
+```
