@@ -256,3 +256,9 @@ How to stop highlighting search result?
 ---------------------------------------
 
 `:noh`
+
+How to go to other end of highlighted text?
+-------------------------------------------
+
+`h v_o`
+

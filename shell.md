@@ -40,3 +40,10 @@ END
 ```
 $ command &
 ```
+
+## exclamation mark (history expansion, substitution and interaction)
+```
+!! (the most recent command)
+!* (the most recent arguments)
+!$ (the last argument of the previous command)
+```

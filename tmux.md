@@ -90,4 +90,18 @@ You can detach the session with prefix+d, or, if you want to completely terminat
 $tmux kill-session
 
 ## How to resize with arrow keys?
+```
 <prefix> followed by <c + arrow key>
+```
+
+## How to: reorder index number
+```
+# move window to empty index
+<prefix> .
+# swap window
+```
+
+## detach all the other clients
+```
+<prefix> D <enter>
+```

@@ -145,3 +145,12 @@ end
 ## How to stop highlighting search result?
 `:noh`
 end.
+
+## How to substitute text under selected area only
+\%V atom
+
+```
+:,<,>s:\%Vabc/xyz\%V/gc
+```
+
+end.
