@@ -47,3 +47,7 @@ $ command &
 !* (the most recent arguments)
 !$ (the last argument of the previous command)
 ```
+
+## Run a script everytime a command is execute (like in rupa/z)
+use PROMPT_COMMAND
+https://unix.stackexchange.com/questions/255367/how-to-call-a-script-after-every-bash-command

@@ -1,3 +1,0 @@
-This is a test
-This is a test made in test. It will be staged but not committed
-This is a test made in master
